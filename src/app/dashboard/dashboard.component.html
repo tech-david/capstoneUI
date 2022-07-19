@@ -1,0 +1,9 @@
+<h2>Uploaded Files</h2> 
+<div class="files-menu">
+    <a *ngFor="let file of files"
+    routerLink="/detail/{{file.id}}">
+        {{file.name}}
+    </a>
+</div>
+
+<app-file-search></app-file-search>

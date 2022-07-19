@@ -1,0 +1,10 @@
+<div *ngIf="file">
+
+    <h2>{{file.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{file.id}}</div>
+    <div>
+      <label for="file-name">File name: </label>
+      <input id="file-name" [(ngModel)]="file.name" placeholder="File name">
+    </div>
+    <button type="button" (click)="goBack()">Go Back</button>
+  </div>

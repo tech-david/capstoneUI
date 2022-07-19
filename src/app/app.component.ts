@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'capstone-ui';
+  title = 'Recession Modeling Using Commodity Prices';
 }

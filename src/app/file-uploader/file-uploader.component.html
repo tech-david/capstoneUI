@@ -1,0 +1,18 @@
+<h2>File</h2>
+<div>
+    <label for="new-file">File name: </label>
+    <input id="'new-file" #fileName />
+
+    <button type="button" class="add-button" (click)="add(fileName.value); fileName.value=''">
+        Add file
+    </button>
+</div>
+<ul class="files">
+    <li *ngFor="let file of files">
+        <a routerLink="/detail/{{file.id}}">
+            <span class="badge"> {{file.id}}</span> {{file.name}}
+        </a>
+        <button type="button" class="delete" title="delete file"
+        (click)="delete(file)">x</button>
+    </li>
+</ul>
